@@ -26,4 +26,4 @@ import { BotUpdate } from './bot.update';
   controllers: [AppController],
   providers: [AppService, InstagramService, BotUpdate],
 })
-export class AppModule { }
+export class AppModule {}
