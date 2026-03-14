@@ -30,7 +30,7 @@ export class InstagramService {
 
   isValidUrl(url: string): boolean {
     const regex =
-      /^(https?:\/\/)?(www\.)?instagram\.com\/(reel|p|tv|reels)\/([^/?#&]+)/;
+      /^(https?:\/\/)?(www\.)?instagram\.com\/(reel|p|tv|reels|stories)\/([^/?#&]+)/;
     return regex.test(url);
   }
 }

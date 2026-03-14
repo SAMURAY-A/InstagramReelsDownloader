@@ -4,6 +4,8 @@ import { TelegrafModule } from 'nestjs-telegraf';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { InstagramService } from './instagram.service';
+import { FacebookService } from './facebook.service';
+import { YouTubeService } from './youtube.service';
 import { BotUpdate } from './bot.update';
 
 @Module({
@@ -24,6 +26,6 @@ import { BotUpdate } from './bot.update';
     }),
   ],
   controllers: [AppController],
-  providers: [AppService, InstagramService, BotUpdate],
+  providers: [AppService, InstagramService, FacebookService, YouTubeService, BotUpdate],
 })
-export class AppModule {}
+export class AppModule { }
